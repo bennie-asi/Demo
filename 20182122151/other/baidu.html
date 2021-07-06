@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" http-equiv="content-type" content="text/html" />
+		<title>千度一下，你就知道</title>
+		<link rel="icon" href="./img/baidu.ico" />
+		<style type="text/css">
+			body{
+				background-image: url(img/back.gif);
+			}
+			button{
+				cursor: pointer;
+			}
+				
+			#bottom div {
+				display: inline-block;
+				margin: 0px 10px 10px 0px;
+			}
+
+			#bottom {
+				text-align: center;
+				color: #a0a0a0;
+				height: 40px;
+				line-height: 40px;
+				width: 100%;
+				position: fixed;
+				bottom: 0px;
+			}
+
+			#input1 div button {
+				background-color: #4169e1;
+				color: #ffffff;
+				width: 110px;
+				height: 46px;
+				position: fixed;
+				margin-left: -6px;
+				margin-top: -28px;
+				border-radius: 0px 10px 10px 0px;
+				font-size: 18px;
+				border: 0px;
+			}
+
+			#input1 div input:hover {
+				border-color: #606060;
+			}
+
+			#input1 div input:focus {
+				border: 2px #4169E1 solid;
+				border-radius: 10px 0px 0px 10px;
+			}
+
+			#input1 div input {
+				width: 500px;
+				height: 40px;
+				margin-top: 5px;
+				border-radius: 10px 0px 0px 10px;
+				border: gray solid 2px;
+				outline: none;
+				/*焦点框颜色*/
+				background-color: transparent;
+			}
+
+			#input1 div {
+				display: inline-block;
+			}
+
+			#input1 {
+				text-align: center;
+				margin: 100px 0px 0px 0px;
+				padding: 10px;
+			}
+
+			#img a img {
+				height: 140px;
+			}
+
+			#img {
+				margin-top: 40px;
+				text-align: center;
+			}
+
+			#top div {
+				font-size: 17px;
+			}
+
+			#top div {
+				display: inline-block;
+				margin: 0px 10px 0px 10px;
+			}
+
+			#top {
+				margin: 10px;
+			}
+
+			#top a:link {
+				color: #000000;
+				text-decoration: none;
+			}
+
+			#top a:visited {
+				color: #000000;
+				text-decoration: none;
+			}
+
+			#top a:hover {
+				color: #4169E1;
+				text-decoration: none;
+			}
+
+			#top a:active {
+				color: #4169E1;
+				text-decoration: none;
+			}
+
+			#bottom a:link {
+				color: #808080;
+				text-decoration: none;
+			}
+
+			#bottom a:visited {
+				color: #808080;
+				text-decoration: none;
+			}
+
+			#bottom a:hover {
+				color: #000000;
+				text-decoration: none;
+			}
+
+			#bottom a:active {
+				color: #000000;
+				text-decoration: none;
+			}
+
+			#gengduo {
+				position: relative;
+
+			}
+
+			#top div #caidanxiang {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 300px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+				padding: 12px 16px;
+			}
+
+			#top div #gengduo:hover #top div #caidanxiang {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<div>
+				<a href="http://news.baidu.com/">新闻</a>
+			</div>
+			<div>
+				<a href="https://www.hao123.com/">hao123</a>
+			</div>
+			<div>
+				<a href="https://map.baidu.com/">地图</a>
+			</div>
+			<div>
+				<a href="https://haokan.baidu.com/">视频</a>
+			</div>
+			<div>
+				<a href="https://tieba.baidu.com/">贴吧</a>
+			</div>
+			<div>
+				<a href="https://xueshu.baidu.com/">学术</a>
+			</div>
+			<div>
+				<a href="https://www.baidu.com/more/" id="gengduo">更多</a>
+				<div id="caidanxiang">
+					<p><a>网盘</a><a>知道</a><a>百科</a><a>图片</a></p>
+					<p><a>宝宝知道</a><a>文库</a><a>经验</a><a>音乐</a></p>
+				</div>
+			</div>
+		</div>
+		<div id="img">
+			<a href="https://www.baidu.com/s?wd=11.11&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs"><img src="img/百度.png" /></a>
+		</div>
+		<div id="input1">
+			<form action="https://www.baidu.com/s?" id="serach-go" method="get">
+				<div>
+					<input type="text" name="wd" />
+				</div>
+				<div>
+					<button>千度一下</button>
+				</div>
+			</form>
+		</div>
+		<div id="bottom">
+			<div>
+				<a href="https://www.baidu.com/cache/setindex/index.html">设为首页</a>
+			</div>
+			<div>
+				<a href="https://home.baidu.com/">关于千度</a>
+			</div>
+			<div>
+				<a href="http://ir.baidu.com/">About Qiandu</a>
+			</div>
+			<div>
+				<a href="https://isite.baidu.com/site/e.baidu.com/d38e8023-2131-4904-adf7-a8d1108f51ef?refer=888">千度营销</a>
+			</div>
+			<div>
+				<a href="https://www.baidu.com/duty">使用千度前必读</a>
+			</div>
+			<div>
+				<a href="https://help.baidu.com/newadd?prod_id=1&category=4">意见反馈</a>
+			</div>
+			<div>
+				<a href="https://help.baidu.com/">帮助中心</a>
+			</div>
+			<div style="margin-left: 100px;">
+				&#169 2020 Qiandu (滇)-非经营性-2020 2018212151-刘博文
+			</div>
+		</div>
+
+	</body>
+	<script>
+		// $引用id=wd的对象
+		$('input[name="wd"]').bind('keypress', function(event) {
+			if (event.keyCode == "13") {
+				$("#serach-go").click();
+			}
+		})
+	</script>
+</html>

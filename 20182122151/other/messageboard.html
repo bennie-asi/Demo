@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>留言板</title>
+		<link rel="icon" href="./img/5.ico">
+		<style>
+			body {
+				background-image: url(img/back.gif);
+				margin: 0 auto;
+			}
+			#bar{
+				text-align: center;
+				margin-top: 20px;
+			}
+			/* 输入框透明 */
+			input,textarea{
+				background-color: transparent;
+			}
+			/* 按钮悬浮变为手型 */
+			button{
+				cursor: pointer;
+			}
+			.button{
+				margin-top: 20px;
+				width: 100px;
+				height: 40px;
+				border-radius: 30px;
+				background-color: rgba(230,230,255,0.7);
+				background-size: 100% 100%;
+				font-size: 20px;
+				border: 2px #fff8dd solid;
+			}
+			.name,.email{
+				height: 50px;
+				margin: 20px;
+			}
+			.message{
+				height: 110px;
+				margin: 20px;
+			}
+			.btn{
+				height: 50px;
+				margin: 20px;
+			}
+			.name input,.email input{
+				height: 40px;
+				width: 350px;
+				border: 2px solid #00aaff;
+				border-radius: 20px;
+				padding: 5px;
+			}
+			.message textarea{
+				height: 100px;
+				width: 350px;
+				border: 2px solid #00aaff;
+				border-radius: 20px;
+				padding: 5px;
+			}
+			.btn button{
+				font-size: 20px;
+				width: 100px;
+				height: 50px;
+				border: 2px solid #00aaff;
+				border-radius: 10px;
+				background-color:transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="button" onclick="javascript:history.back()">返回</button>
+		<div id="bar">
+			<form>
+				<div class="name">
+					<input placeholder="请留下您的姓名......" required />
+				</div>
+				<div class="email">
+					<input placeholder="请留下您的邮件地址......" type="email" required />
+				</div>
+				<div class="message">
+					<textarea rows="4" cols="50" name="subject" placeholder="请留言......" required></textarea>
+				</div>
+				<div class="btn">
+					<button type="submit">发送</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
